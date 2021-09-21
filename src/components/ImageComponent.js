@@ -16,16 +16,12 @@ const ImageComponent = ({ data: { date, explanation, media_type, title, url } })
             //adding like ID to local storage
             setLikeId(date.toString())
             localStorage.setItem('likeId', likeId)
-            console.log(likeId)
-            console.log(`${likeId} this was liked`)
         } else {
             //if already liked, remove like
             setIsLiked(false)
             localStorage.setItem('isLiked', false)
             setLikeId(date.toString())
             localStorage.setItem('likeId', likeId)
-            console.log(likeId)
-            console.log(`${likeId.time} this was unliked`)
         }
     }
 
