@@ -19,7 +19,7 @@ function App() {
   const apiUrl = 'https://api.nasa.gov/planetary/apod'
 
   //pulling in custom API key
-  const apiKey = '8Z6IKqi2BqBmNx9CCgNQB4wT2POPgYeyTPwuGq3U'
+  const apiKey = process.env.REACT_APP_NASA_API_KEY
 
   //extracting data from APOD API and assigning to state
   const fetchData = async () => {
